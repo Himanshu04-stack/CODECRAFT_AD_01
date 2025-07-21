@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base App Theme -->
+    <style name="Theme.CalculatorApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand colors -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand colors -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- General background and text colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColor">@color/textPrimary</item>
+
+        <!-- Status bar styling -->
+        <item name="android:statusBarColor">@color/purple_700</item>
+
+        <!-- Default Button Style -->
+        <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>
+
+        <!-- Shape for small components -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Material3.Corner.Small</item>
+    </style>
+
+    <!-- Calculator Button Styles -->
+
+    <style name="CalcButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:backgroundTint">#673AB7</item> <!-- Deep Purple -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="CalcButtonOperator" parent="CalcButton">
+        <item name="android:backgroundTint">#FF7043</item> <!-- Soft Orange -->
+    </style>
+
+    <style name="CalcButtonEqual" parent="CalcButton">
+        <item name="android:backgroundTint">#4CAF50</item> <!-- Green -->
+    </style>
+
+    <style name="CalcButtonSecondary" parent="CalcButton">
+        <item name="android:backgroundTint">#9E9E9E</item> <!-- Gray -->
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

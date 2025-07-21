@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="end"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="0" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/developerCredit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnClear" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_secondary" android:text="C" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSqrt" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_secondary" android:text="√" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPercent" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_secondary" android:text="%" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDivide" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_operator" android:text="/" android:textColor="@color/white" android:textSize="32sp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn7" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="7" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn8" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="8" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn9" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="9" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMultiply" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_operator" android:text="*" android:textColor="@color/white" android:textSize="32sp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn4" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="4" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn5" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="5" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn6" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="6" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMinus" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_operator" android:text="-" android:textColor="@color/white" android:textSize="32sp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn1" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="1" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn2" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="2" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn3" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="3" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPlus" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_operator" android:text="+" android:textColor="@color/white" android:textSize="32sp" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn0" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="0" android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDot" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" android:text="." android:textColor="@color/white" android:textSize="32sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDelete" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_bg" app:icon="@android:drawable/ic_input_delete" app:iconGravity="textStart" app:iconPadding="0dp" app:iconTint="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEqual" android:layout_height="80dp" android:layout_margin="8dp" android:layout_weight="1"
+                android:background="@drawable/button_equal" android:text="=" android:textColor="@color/white" android:textSize="32sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/developerCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Developed by Himanshu Garg"
+        android:textColor="#80FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
